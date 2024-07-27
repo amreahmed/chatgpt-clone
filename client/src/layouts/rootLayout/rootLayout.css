@@ -1,0 +1,52 @@
+.rootLayout {
+  padding: 16px 64px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 8px;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140e2d; /* Background color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #686868; /* Gradient color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#686868 ;/* Darker gradient on hover for better visibility */
+  border-radius: 10px; /* Ensure rounded corners on hover */
+}
+
+
